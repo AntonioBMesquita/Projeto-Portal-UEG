@@ -1,0 +1,37 @@
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ffff;
+  background-color: #202f60;
+}
+
+.subtitulo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#lista_de_projetos {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  list-style: none;
+}
+.projeto {
+  border: 1px solid #000;
+  display: flex;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.rodape {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #202f60;
+  color: #ffff;
+}
