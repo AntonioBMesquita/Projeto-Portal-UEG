@@ -88,6 +88,25 @@ a {
 .lista_de_projetos h3 {
   text-align: center;
   margin-left: 10px;
+  margin-bottom: 15px;
+}
+.novo_projeto {
+  border: 1px solid #eaeaea;
+  display: flex;
+  width: 350px;
+  height: 400px;
+  transition: transform 0.3s ease;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+#novos_projetos {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 50px;
+}
+.novo_projeto:hover {
+  transform: scale(1.2);
 }
 .rodape {
   display: flex;
