@@ -1,3 +1,50 @@
+/* 1. Reset básico de margens e box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Melhora a renderização das fontes e altura da linha */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: sans-serif; /* Ou a fonte que você preferir */
+}
+
+/* 3. Imagens responsivas (evita que elas "quebrem" o layout) */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Remove estilos padrão de listas (comum em menus de portais) */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 6. Facilita o trabalho com formulários */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Garante que o corpo ocupe a altura toda da tela se necessário */
+html,
+body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
 .cabecalho {
   display: flex;
   flex-direction: column;
@@ -9,19 +56,21 @@
 .subtitulo {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
 }
-#lista_de_projetos {
+.lista_de_projetos {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   text-align: center;
   list-style: none;
+  margin: 50px;
 }
 .projeto {
   border: 1px solid #000;
   display: flex;
   text-align: center;
-  width: 300px;
+  width: 350px;
   height: 400px;
 }
 a {
